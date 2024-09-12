@@ -10,6 +10,5 @@ interface WebBrowser {
     fun goNextPage()
     fun closePage(page: WebPage)
     fun currentPage(): WebPage?
-
     fun previewCurrentPage()
 }
