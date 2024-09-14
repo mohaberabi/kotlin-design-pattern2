@@ -10,7 +10,10 @@ class ChatManager : ChatMediator {
         message: String,
         from: ChatUser,
         to: ChatUser
-    ) = from.sendMessage(message = message, to = to)
+    ) = from.sendMessage(
+        message = message,
+        to = to
+    )
 
     override fun sendGroupMessage(
         message: String,
@@ -39,6 +42,12 @@ private fun main() {
             groupId = "1"
         )
     }
-    val user = ChatUser(name = "Loser-1092", chatMediator = mediator)
-    mediator.sendGroupMessage(groupId = "1", message = "jhsadvhjasdvjhsadvjsahdvjashd", from = user)
+    val user = ChatUser(
+        name = "Loser-1092",
+        chatMediator = mediator
+    )
+    mediator.sendGroupMessage(
+        groupId = "1",
+        message = "jhsadvhjasdvjhsadvjsahdvjashd", from = user
+    )
 }

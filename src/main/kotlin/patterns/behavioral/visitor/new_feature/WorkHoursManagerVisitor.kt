@@ -15,17 +15,17 @@ interface WorkHoursManagerVisitor {
 
 class LeaveRequestHoursVisitor : WorkHoursManagerVisitor {
     override fun visit(manager: DayShiftHoursManager) {
-        println("maanging leaveReqeust from DayShiftHoursManager")
+        println("managing leaveRequest from DayShiftHoursManager")
     }
 
     override fun visit(manager: NightShiftHoursManager) {
-        println("maanging leaveReqeust from NightShiftHoursManager")
+        println("managing leaveRequest from NightShiftHoursManager")
 
 
     }
 
     override fun visit(manager: RemoteShiftHoursManager) {
-        println("maanging leaveReqeust from RemoteShiftHoursManager")
+        println("managing leaveRequest from RemoteShiftHoursManager")
     }
 
 }
