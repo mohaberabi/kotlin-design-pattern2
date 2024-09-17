@@ -14,5 +14,8 @@ class DefaultAuthChecker() : AuthenticationChecker {
 
     override fun isAuthed(
         request: Request,
-    ): Boolean = Random.nextBoolean()
+    ): Boolean = Random.nextBoolean().also { }
 }
+
+
+
